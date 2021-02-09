@@ -1,0 +1,81 @@
+@media screen and (max-width: 900px) {
+ 
+ /* cards  ++++++++++++++++++++++++++*/
+ .card {
+    margin-bottom: 40px;
+  }
+  .userlink {
+    height: 80px;
+  }
+  .ratings p {
+    text-align: center;
+  }
+  .ratings .userphoto {
+    height: 120px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .space {
+    width: 100%;
+    padding: 2px 0px 2px 0px;
+    margin: 5px 0px 5px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+   /* cards  ++++++++++++++++++++++++++*/
+   .card {
+    margin-bottom: 40px;
+  }
+  .userlink {
+    height: 80px;
+  }
+  .ratings p {
+    text-align: center;
+  }
+  .ratings .userphoto {
+    height: 120px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .space {
+    width: 100%;
+    padding: 2px 0px 2px 0px;
+    margin: 5px 0px 5px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/* cards ++++++++++++++++++++++++++*/
+.card {
+  margin: 0px 30px 10px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-img-top {
+  height: 150px;
+  width: 150px;
+  margin-top: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.readerschoice {
+  padding: 20px;
+  background-color: #15ff15;
+  border-radius: 7px;
+}
+
+.flechanegra {
+  margin: 5px 0px 0px 20px;
+}

@@ -1,0 +1,123 @@
+
+@import "responsive_max";
+@import"responsive_min";
+@import"colors";
+@import"formularios";
+
+html{background-color: $color-black;}
+body{font-family: 'montserrat', sans-serif;}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+
+.btn{ border-radius: 7px;}
+
+}
+
+/* NAV BAR*/
+.navbar{
+background-color: $color-white;
+box-shadow: 0px 0px 2px 0px $color-grey;
+        :hover{ color: $color-violet;}
+}
+
+
+.navbar-toggler{
+font-size: 40px;
+border: none;
+    :focus{ 
+        outline:none;}
+}
+
+a{
+    color: $color-black;
+    text-decoration: none;
+}
+/* HEAD CARROUSEL*/
+
+
+#carouselExampleSlidesOnly{ 
+padding-top:90px;
+color: $color-white;
+        h1 {text-shadow: 2px 1px #444;}
+        p{text-shadow: 2px 1px #444;}
+}
+
+.logowanderlust{
+
+    height: 60px;
+}
+
+.contenedor{
+    height: 300px;}
+
+.seccion{ border: 2px solid $color-black;}
+
+
+/*Claims *************/
+
+#subtitulo{
+color:$color-black;
+}
+
+
+/* cards ++++++++++++++++++++++++++*/
+
+.card{
+margin:0px 30px 10px 30px;
+-webkit-box-align: center;
+display:flex;
+align-items: center;
+
+}
+
+
+.card-img-top{
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+    align-self: center;
+    width: 20%;
+}
+
+.readerschoice{
+padding: 20px;
+background-color:$color-green;
+border-radius: 7px;
+
+}
+
+.flechanegra{
+   margin: 5px 0px 0px 20px;
+   
+}
+
+/* cards FIN ++++++++++++++++++++++++++*/
+
+
+
+/* PLAN ++++++++++++++++++++++++++*/
+
+
+
+.sitemap{ 
+    background-color:$color-coral;
+    text-align: center;
+
+ a:hover {
+    color: black;
+    text-decoration: underline;}
+ }
+
+svg{
+align-self: stretch;
+}
+
+.foot-rss{ background-color:$color-black;
+color: $color-white;
+text-align: center;
+background-color:$color-black ;}
+
+footer{ background-color: $color-black;}

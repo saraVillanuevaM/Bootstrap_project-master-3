@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Wanderlust</title>
+  </head>
+  <body>
+  
+    <link href="validaciones.js">
+
+
+
+
+ <!-- barra de navegación principal -->
+
+   
+ <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
+  <a class="navbar-brand" href="index.html"><img src="img/logoWANDERLUST.png" alt="logowanderlust" class="logowanderlust"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+   data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+   aria-expanded="false" aria-label="Toggle navigation">
+   <ion-icon name="menu"></ion-icon>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="Home">Travel references</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="Home">Plan your trip</a>
+      </li>
+<!-- ----------------------!Form search-->
+<!-- The form -->
+<form name="search">
+  <input id="id1" type="text" max="100" name="searchbox" placeholder="type something">
+  <button onclick="myFunction()">OK</button>
+  
+  </form>
+        <!-- ----------------------! FIN Form search-->
+      <li class="nav-item">
+        <a class="nav-link" href="login.html" id="porfolio">Sing-in <ion-icon name="person-circle-outline"></ion-icon></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="login"> <ion-icon name="contact" class="iconlogin"></ion-icon> </a>
+      </li>
+
+      
+</ul>
+        </div>
+</nav>
+
+                </div>
+
+     <!-- FIN barra de navegación principal -->           
+    
+    <title>register</title>
+  </head>
+  <body>
+
+    <script src="validaciones.js"></script>
+
+
+
+    <div class="loginform">
+
+      <div class="col-md-6 card" style="margin: 0 auto">
+     
+        
+ 
+
+            <form class="row g-3 needs-validation" novalidate>
+
+<div class="titularform">
+              <h1>Create account</h1>
+            </div>
+              <form class="row g-3">
+
+
+                <div class="col-md-7">
+                  <label for="validationDefault01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationDefault01" value="" required>
+                </div>
+                <div class="col-md-7">
+                  <label for="validationDefault02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationDefault02" value="" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationDefaultUsername" class="form-label">Username</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationDefault03" class="form-label">City</label>
+                  <input type="text" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationDefault04" class="form-label">Province</label>
+                  <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Choose...</option>
+
+                    <option>Alicante</option>
+                    <option> A Coruña</option>
+                    <option>Álava</option>
+                    <option>Albacete</option>
+                    <option>Alicante</option>
+                    <option>Almería</option>              
+                    <option>Asturias</option>
+                      <option>Ávila</option>
+                        <option>Badajoz</option>
+                          <option>Baleares</option>
+                    <option>Barcelona</option>
+                      <option>Burgos</option>
+                        <option>Cáceres</option>
+                          <option>Cádiz</option>
+                            <option>Cantabria</option>
+                              <option>Castellón</option>
+                                <option>Ciudad Real</option>
+              <option>Córdoba</option>
+                <option>Cuenca</option>
+                  <option>Girona</option>
+                    <option>Granada</option>
+                      <option>Guadalajara</option>
+                        <option>Gipuzkoa</option>
+                          <option>Huelva</option>
+                            <option>Huesca</option>
+                              <option>Jaén</option>
+                                <option>La Rioja</option>
+                                  <option>Las Palmas</option>
+                                    <option>León</option>
+                                      <option>Lérida</option>
+                                        <option>Lugo</option>
+                                          <option>Madrid</option>
+                                            <option>Málaga</option>
+                                              <option>Murcia</option>
+                                                <option>Navarra</option>
+                                                  <option>Ourense</option>
+                                                    <option>Palencia</option>
+                                                      <option>Pontevedra</option>
+                                                        <option>Salamanca</option>
+                                                          <option>Segovia</option>
+                                                            <option>Sevilla</option>
+                                                              <option>Soria</option>
+                                                                <option>Tarragona</option>
+                                                                  <option>Santa Cruz de Tenerife</option>
+                                                                    <option>Teruel</option>
+                                    <option>Toledo</option>
+                                    <option>Valencia</option>
+                                    <option>Valladolid</option>
+                                    <option>Vizcaya</option>
+                                    <option>Zamora</option>
+                                    <option>Zaragoza</option>
+                                      <option>Ceuta</option>
+                                      <option>Melilla</option>
+                   
+                  </select>
+                </div>
+                
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                      Agree to terms and conditions
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">GO</button>
+                </div>
+              </form>
+
+
+
+                </div>
+              </form>
+
+    </div>
+
+</div>
+
+
+
+ <!-- SITE MAP -->        
+ <div class="sitemap ">
+          
+  <ul>
+    <li> <a href="#">Search</a></li>
+    <li> <a href="#">Sugestions</a></li>
+    <li> <a href="#">About</a></li>
+    <li> <a href="login.html">Sing-in</a></li>
+    <li> <a href="#">Download</a></li>
+  </ul>
+
+  </div>
+
+
+<!-- Subsecciones footer -->             
+
+<footer class="foot-rss">
+<h3>Follow us</h3>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-google-plus-g"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+</footer>
+
+
+
+
+ <!-- JavaScript -->
+<script>
+
+(function () {
+  'use strict'
+
+
+  var forms = document.querySelectorAll('.needs-validation')
+
+
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  
+  </body>
+
+
+
+</html>

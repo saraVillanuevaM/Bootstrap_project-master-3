@@ -1,0 +1,284 @@
+@media screen and (min-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+    /*border: solid 1px black;*/
+  }
+  html {
+    width: 100%;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  body {
+    background: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  p {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+  }
+  /*NAVIGATION*/
+  .nav-main {
+    font-size: 17px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    padding: 20px 0;
+  }
+  .nav-logo {
+    width: 250px;
+  }
+  /*NAV RIGHT*/
+  .nav-main ul {
+    margin-left: 10%;
+    text-align: left;
+  }
+  .nav-main ul li {
+    display: inline-block;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    padding: 10px;
+  }
+  .nav-menu li {
+    border-left: 1px solid #1e7dbe;
+  }
+  .nav-main ul li a:hover {
+    color: #af23cc;
+  }
+  /*SHOWCASE*/
+  .photoheadresponsive {
+    display: none;
+  }
+  .showcase {
+    width: 100%;
+    height: 500px;
+    background-image: url("img/hi-margaux-mainretocada copia.jpg");
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .showcase h2 {
+    font-size: 3em;
+  }
+  .content {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    width: 40%;
+    height: 50%;
+    margin-left: 30px;
+  }
+  /*SUGERENCIAS Y FORMULARIO CAJAS*/
+  .secondlevel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*SUGERENCIAS*/
+  .botonsuggestion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 5px;
+    background-color: #15ff15;
+    border: 1px solid white;
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+  }
+  .botonsuggestion a {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    margin-top: 5px;
+  }
+  .botonsuggestion:hover {
+    background-color: black;
+  }
+  .sugerencias h3 {
+    font-size: 2em;
+    text-decoration: underline;
+    padding-bottom: 20px;
+  }
+  .sugerencias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: white;
+    margin: 2%;
+    width: 50%;
+    padding: 20px;
+    height: 300px;
+    border: 5px solid #15ff15;
+  }
+  .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 1px solid #15ff15;
+    padding-top: 10px;
+  }
+  .usertext {
+    width: 80%;
+  }
+  .userphoto {
+    width: 15%;
+  }
+  .userpic {
+    width: 100%;
+  }
+  /*FORMULARIO*/
+  .formulario {
+    font-family: Montserrat;
+    background-color: white;
+    width: 50%;
+    margin: 2%;
+    padding: 20px;
+    height: 300px;
+    border: 5px solid #af23cc;
+  }
+  .formulario h3 {
+    font-size: 2em;
+    text-decoration: underline;
+    padding-bottom: 20px;
+  }
+  .locationtime {
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px solid #af23cc;
+  }
+  .formulario p {
+    padding: 5px;
+    margin: 5px;
+  }
+  .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .formboton {
+    font-size: 1.1em;
+    width: 150px;
+    height: 50px;
+    background-color: #af23cc;
+    color: white;
+    font-family: Montserrat;
+    font-weight: bold;
+    border: 1px white;
+  }
+  .formboton:hover {
+    background-color: black;
+  }
+  /*SITEMAP*/
+  .sitemap {
+    height: 60px;
+    width: 100%;
+    background-color: #ff9966;
+  }
+  .sitemap ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sitemap li {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  .sitemap a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  /*footer*/
+  .foot-rss {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 40px;
+    color: white;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+  }
+  .fab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: white;
+    font-size: 2em;
+    width: 50px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
