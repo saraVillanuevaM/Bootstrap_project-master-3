@@ -185,9 +185,9 @@
 
 /* Formulario de login++++++++++++++++++++++++++*/
 .loginform {
-  height: 600px;
+  height: 750px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -283,7 +283,6 @@ a {
   width: 150px;
   margin-top: 10px;
   align-self: center;
-  width: 20%;
 }
 
 .readerschoice {
