@@ -18,20 +18,15 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+
+
     <title>Register</title>
     
   </head>
-
-
   <body>
-   
-
-
-
-
- <!-- barra de navegación principal -->
-
-   
+  <!-- barra de navegación principal -->
  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
   <a class="navbar-brand" href="index.html"><img src="img/logoWANDERLUST.png" alt="logowanderlust" class="logowanderlust"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -59,147 +54,162 @@
   </form>
         <!-- ----------------------! FIN Form search-->
       <li class="nav-item">
-        <a class="nav-link" href="login.html" id="porfolio">Sing-in <ion-icon name="person-circle-outline"></ion-icon></a>
+        <a class="nav-link" href="signit.html" id="porfolio">Sing-in <ion-icon name="person-circle-outline"></ion-icon></a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#" id="login"> <ion-icon name="contact" class="iconlogin"></ion-icon> </a>
-      </li>
+     
 
       
 </ul>
         </div>
 </nav>
-
                 </div>
-
      <!-- FIN barra de navegación principal -->           
     
     <title>register</title>
   </head>
   <body>
 
-    <div class="loginform">
+
+<div class="loginform">
+
+
     <div class="mb-3 card" style="margin: 0 auto">
-   
-            <form id="form1"  class="needs-validation"  onsubmit="return validateform()" novalidate>
 
+    <!-- FORM -->
+    
+      <h1>Create your count</h1>
+  
+  
+      <form  id="myFormId" onsubmit="return registerValidate()" name="myForm">
+  
+  
+        <div class="form-group col-md-12">
 
-                      <div class="col-md-12">
-                            <h1>Create account</h1>
+          <label for="inputEmail">Email</label>
+           <input type="text" name="inputEmail" class="form-control" id="inputEmail">
+           <div class="invalid-feedback" id="errorEmail"></div>
 
-                                <div class="mb-6">
-                                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <label for="inputUser">User</label>
+            <div class="input-group"> <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="text" class="form-control" id="inputUser">
+            <div class="invalid-feedback" id="errorUser"></div>
+         
+      
+  
 
-                                  <input type="email" class="form-control" name="mail"id="exampleInputEmail1" aria-describedby="emailHelp">
-                                 
+<!-- password identica -->
+  
+        <div class="col-md-12">
+          <label for="password" class="form-label">Password</label>
+          <input type="new-password" name="pass"class="form-control" id="password">
+          <div class="invalid-feedback" id="errorpass"></div>       
+        </div>
 
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="validationDefaultUsername" class="form-label">Username</label>
-                                        <div class="input-group">
-                                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        <div class="col-md-12">
+          <label for="confirm_password" class="form-label">Confirm Password</label>
+          <input type="new-password" class="form-control" id="confirm_password">
+          <div class="invalid-feedback" id="errorpass"></div>   
+          
+<!-- FIN password identica -->
+      
+        <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputProvince">Provincia</label>
+           <select id="inputProvince" class="form-control">
+          <option selected value=""></option>
+          <option>Alicante</option>
+          <option> A Coruña</option>
+          <option>Álava</option>
+          <option>Albacete</option>
+          <option>Alicante</option>
+          <option>Almería</option>              
+          <option>Asturias</option>
+          <option>Ávila</option>
+          <option>Badajoz</option>
+          <option>Baleares</option>
+          <option>Barcelona</option>
+          <option>Burgos</option>
+          <option>Cáceres</option>
+          <option>Cádiz</option>
+          <option>Cantabria</option>
+          <option>Castellón</option>
+          <option>Ciudad Real</option>
+          <option>Córdoba</option>
+          <option>Cuenca</option>
+          <option>Girona</option>
+          <option>Granada</option>
+           <option>Guadalajara</option>
+           <option>Gipuzkoa</option>
+          <option>Huelva</option>
+           <option>Huesca</option>
+           <option>Jaén</option>
+            <option>La Rioja</option>
+             <option>Las Palmas</option>
+             <option>León</option>
+              <option>Lérida</option>
+              <option>Lugo</option>
+               <option>Madrid</option>
+               <option>Málaga</option>
+               <option>Murcia</option>
+               <option>Navarra</option>
+               <option>Ourense</option>
+               <option>Palencia</option>
+                <option>Pontevedra</option>
+              <option>Salamanca</option>
+               <option>Segovia</option>
+            <option>Sevilla</option>
+           <option>Soria</option>
+                           <option>Tarragona</option>
+                          <option>Santa Cruz de Tenerife<option>
+                          <option>Teruel</option>
+                          <option>Toledo</option>
+                          <option>Valencia</option>
+                          <option>Valladolid</option>
+                          <option>Vizcaya</option>
+                          <option>Zamora</option>
+                          <option>Zaragoza</option>
+                            <option>Ceuta</option>
+                            <option>Melilla</option>
+        
+          </select>
+          <div class="invalid-feedback" id="errorProvince"></div>
+        </div>
 
-                                        <input type="text" name="user"class="form-control" id="usernamefield"  aria-describedby="info">
-                                        <div class="invalid-feedback">Try another one</div>
-                                        <div class="valid-feedback">Valid field</div>
-                                        </div>
-                                      </div>
-                                </div>
+        </div>
 
-
-                              <div class="col-md-3">
-                                <label for="validationDefault04" class="form-label ">Province</label>
-                                <select class="form-select " id="province">
-                                  <option selected disabled value="">Choose...</option>
-
-                                  <option>Alicante</option>
-                                  <option> A Coruña</option>
-                                  <option>Álava</option>
-                                  <option>Albacete</option>
-                                  <option>Alicante</option>
-                                  <option>Almería</option>              
-                                  <option>Asturias</option>
-                                    <option>Ávila</option>
-                                      <option>Badajoz</option>
-                                        <option>Baleares</option>
-                                  <option>Barcelona</option>
-                                    <option>Burgos</option>
-                                      <option>Cáceres</option>
-                                        <option>Cádiz</option>
-                                          <option>Cantabria</option>
-                                            <option>Castellón</option>
-                                              <option>Ciudad Real</option>
-                            <option>Córdoba</option>
-                              <option>Cuenca</option>
-                                <option>Girona</option>
-                                  <option>Granada</option>
-                                    <option>Guadalajara</option>
-                                      <option>Gipuzkoa</option>
-                                        <option>Huelva</option>
-                                          <option>Huesca</option>
-                                            <option>Jaén</option>
-                                              <option>La Rioja</option>
-                                                <option>Las Palmas</option>
-                                                  <option>León</option>
-                                                    <option>Lérida</option>
-                                                      <option>Lugo</option>
-                                                        <option>Madrid</option>
-                                                          <option>Málaga</option>
-                                                            <option>Murcia</option>
-                                                              <option>Navarra</option>
-                                                                <option>Ourense</option>
-                                                                  <option>Palencia</option>
-                                                                    <option>Pontevedra</option>
-                                                                      <option>Salamanca</option>
-                                                                        <option>Segovia</option>
-                                                                          <option>Sevilla</option>
-                                                                            <option>Soria</option>
-                                                                              <option>Tarragona</option>
-                                                                                <option>Santa Cruz de Tenerife</option>
-                                                                                  <option>Teruel</option>
-                                                  <option>Toledo</option>
-                                                  <option>Valencia</option>
-                                                  <option>Valladolid</option>
-                                                  <option>Vizcaya</option>
-                                                  <option>Zamora</option>
-                                                  <option>Zaragoza</option>
-                                                    <option>Ceuta</option>
-                                                    <option>Melilla</option>
-                                
-                                </select>
-                              </div>
-
-                              <div class="col-md-12">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" name="pass"class="form-control" id="password">
-                              </div>
-                      
-                              <div class="col-md-12">
-                                <label for="confirm_password" class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control" id="confirm_password">
-
-                                <div class="invalid-feedback">Passwords Don't Match </div>
-                                <div class="valid-feedback">Valid field</div>
-                              </div>
-                            
-                              <div class="col-12">
-                                <div class="form-check">
-                                  <input class="form-check-input " type="checkbox" value="" id="agree">
-                                  <label class="form-check-label" for="invalidCheck2">
-                                    Agree to terms and conditions
-                                  </label>
-                                </div>
-                              </div>
-                <div class="col-12">
-                  <button onclick="validate()"class="btn btn-primary" type="submit">GO</button>
-                </div>
-                  </div>
-              </form>
-
+        <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback" id="errorCheck"></div>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Create your count</button>
+      </form>
     </div>
-
+  </div>
 </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -210,7 +220,7 @@
     <li> <a href="#">Search</a></li>
     <li> <a href="#">Sugestions</a></li>
     <li> <a href="#">About</a></li>
-    <li> <a href="login.html">Sing-in</a></li>
+    <li> <a href="signit.html">Sing-in</a></li>
     <li> <a href="#">Download</a></li>
   </ul>
 
@@ -233,38 +243,20 @@
 
  <script type="text/javascript" src="validaciones.js"></script>
  
-<script>
-  /////////////////Validacion registro//
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function () {
-    'use strict'
-  
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
-  
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-      .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-  
-          form.classList.add('was-validated')
-        }, false)
-      })
-  })()
-  </script>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-  
+ 
+ 
+ 
+ 
+ 
+ 
   </body>
 
 
